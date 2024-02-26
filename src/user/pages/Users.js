@@ -13,7 +13,7 @@ const Users = () => {
     const fetchUsers = async () => {
       try {
         const responseData = await sendRequest(
-          'https://backend-en5m.onrender.com/api/users'
+          'http://localhost:5000/api/users'
         );
 
         setLoadedUsers(responseData.users);
